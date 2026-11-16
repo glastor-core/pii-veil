@@ -21,7 +21,7 @@ jobs:
     name: Specter — API Contract & SemVer Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Run GLASTOR® Specter API Contract Verification
@@ -32,7 +32,7 @@ jobs:
     name: Byte-Gauge — Release Binary Hardening & Size Gatekeeper
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - name: Build release artifacts (veil CLI & libpii_veil_ffi)
@@ -47,7 +47,7 @@ jobs:
     name: Nemesis SAST & pii-veil Self-Dogfooding DLP Scan
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - name: Run GLASTOR® Nemesis DevSecOps Audit
