@@ -62,7 +62,7 @@ jobs:
           Copy-Item LICENSE-MIT, LICENSE-APACHE, README.md dist-pkg/
           Compress-Archive -Path dist-pkg/* -DestinationPath "${{ matrix.archive_name }}.zip"
       - name: Upload Release Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.archive_name }}
           path: |
