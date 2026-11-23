@@ -61,7 +61,7 @@ jobs:
 
       - name: Setup Pages
         id: pages-config
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           enablement: true
         continue-on-error: true
