@@ -17,7 +17,7 @@ ner = []
 
 [dependencies]
 aho-corasick = "1.1"
-chacha20poly1305 = { version = "0.10", default-features = false, features = ["alloc"] }
+chacha20poly1305 = { version = "0.11", default-features = false, features = ["alloc"] }
 getrandom = "0.2"
 pbkdf2 = { version = "0.12", default-features = false, features = ["hmac", "sha2"] }
 regex = { workspace = true }
